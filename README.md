@@ -2,4 +2,6 @@
 
 Ammar Vehbi's Homework Repository
 
-Hack Your Future
+Here you can find my homework hosted via Github :octocat:
+
+https://ammarvehbi.github.io/hyf-html-css/
