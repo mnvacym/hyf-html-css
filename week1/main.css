@@ -1,0 +1,126 @@
+html {
+  scroll-behavior: smooth;
+}
+  
+  body {
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    
+    
+  }
+
+  #my_photo {
+    width: 200px;
+    border: none;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    width: 20%;
+    opacity: 0.8;
+  }
+
+  #my_name {
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  #line {
+    width: 300px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    top: -35px;
+    
+  }
+  
+  #profession {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    top: -90px;
+
+  }
+
+  
+
+#header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+nav img {
+  opacity: 0.8;
+  padding: 3px 5px 3px 5px;
+  margin: 5px 5px 5px 5px;
+}
+
+#navbar {
+  position: fixed;
+  float: left;
+}
+
+.icons:hover {
+  /**border: solid black 2px;
+  border-radius: 10px;**/
+  /**animation: shake 0.7s; 
+  animation-iteration-count: infinite; **/
+  animation: zoom 0.2s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+  from{width: 40px;}
+  to{width: 60px;}
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.icons {
+  width: 40px;
+  margin: 10px;
+  display: flex;
+
+}
+
+.text {
+  text-align: center;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-size: 20px;
+  position: relative;
+  top: 60px;
+  line-height: 1.8;
+
+}
+
+
+
+
