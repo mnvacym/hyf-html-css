@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
   }
   
@@ -20,10 +20,12 @@ html{
     border: none;
     border-radius: 6px;
   }
+
   h3:hover {
     background-color: #ea2e49;
     color:white; 
   }
+
   #navbar {
     position: fixed;
     top: 17px;
@@ -32,6 +34,7 @@ html{
     opacity: 0.9;
     animation: mymove 1s ease;
   }
+
   h3 a {
     text-decoration: none;
     color: white;
@@ -47,11 +50,13 @@ html{
       opacity: 0.6;
     }
   }
-  @keyframes mymove{
+
+  @keyframes mymove {
     from{top: -30px;}
     to{top:17px;}
   }
-  @keyframes animation{
+
+  @keyframes animation {
     from {
       letter-spacing: 32px;
     }
@@ -107,8 +112,8 @@ html{
     top: 180px;
     animation: fadeOut 4s ease;
     animation-fill-mode: forwards;
-      
-  }
+    }
+
   #obama {
     font-size:15px;
   }
@@ -130,6 +135,7 @@ html{
     animation: fadeOut 4s ease;
     animation-fill-mode: forwards;
   }
+
   #francois {
     font-size:15px;
   }
@@ -151,6 +157,7 @@ html{
     animation: fadeOut 4s ease;
     animation-fill-mode: forwards;
   }
+
   #merkel {
     font-size:15px;
   }
@@ -172,6 +179,7 @@ html{
     animation: fadeOut 4s ease;
     animation-fill-mode: forwards;
   }
+
   #bankimoon {
     font-size:15px;
   }
@@ -182,6 +190,7 @@ html{
     left: 480px;
     opacity: 0.8;
   }
+
   #stylish_underline2 {
     position: absolute;
     top: 65px;
@@ -209,6 +218,7 @@ html{
     width: 30%;
     opacity: 0.9;
   }
+
   .than_now_right {
     float: right;
     margin-left: 5px;
@@ -223,7 +233,7 @@ html{
     opacity: 0.9;
   }
   
-  .current{
+  .current {
     font-size:40px; 
     background-color:black; 
     margin-right:30px; 
@@ -238,7 +248,8 @@ html{
     float:left; 
     opacity:0.8;
   }
-  .cause{
+
+  .cause {
     font-size:40px; 
     background-color:rgb(255, 71, 71); 
     margin-right:30px; 
@@ -253,7 +264,8 @@ html{
     float:left; 
     opacity:0.8;
   }
-  .pyhsical_evidence_and_effects{
+
+  .pyhsical_evidence_and_effects {
     font-size:40px; 
     background-color:rgb(129, 71, 31); 
     margin-right:40px; 
@@ -268,7 +280,8 @@ html{
     float:left; 
     opacity:0.8;
   }
-  .what_we_can_do{
+
+  .what_we_can_do {
     font-size:40px; 
     background-color:rgb(39, 31, 89); 
     margin-right:30px; 
