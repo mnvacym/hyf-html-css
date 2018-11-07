@@ -19,6 +19,12 @@ html {
     margin-bottom: 20px;
     width: 20%;
     opacity: 0.8;
+    transition: width 1s;
+  }
+
+  #my_photo:hover {
+    width: 22%;
+    transition: width 1s;
   }
 
   #my_name {
@@ -112,11 +118,123 @@ nav img {
   margin-right: auto;
   width: 50%;
   font-size: 20px;
-  position: relative;
-  top: 60px;
+  position: absolute;
+  top: 825px;
+  left: 25%;
   line-height: 1.8;
 }
 
+h2 {
+  color: white;
+}
 
+#about {
+  border-bottom: 50px solid rgb(229, 107, 113);
+  border-left: 0px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0px;
+  width: 540px;
+  position: relative;
+  top: 188px;
+  z-index: -1;
+  opacity: 0.9;
+  margin: 0;
+}
 
+#work {
+  border-bottom: 50px solid rgb(119, 137, 177);
+  border-left: 30px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0px;
+  width: 1155px;
+  position: relative;
+  top: 550px;
+  left: 320px;
+  z-index: -1;
+  opacity: 0.9;
+  margin: 0;
 
+}
+
+#edu {
+  border-bottom: 50px solid rgb(143, 120, 179);
+  border-left: 0px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0px;
+  width: 520px;
+  position: relative;
+  top: 2013px;
+  z-index: -1;
+  opacity: 0.9;
+  margin: 0;
+
+}
+
+#sk {
+  border-bottom: 50px solid rgb(245, 156, 166);
+  border-left: 30px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0px;
+  width: 1155px;
+  position: relative;
+  top: 3060px;
+  left: 320px;
+  z-index: -1;
+  opacity: 0.9;
+  margin: 0;
+}
+
+#hob {
+  border-bottom: 50px solid rgb(102, 160, 160);
+  border-left: 0px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0px;
+  width: 520px;
+  position: relative;
+  top: 3940px;
+  z-index: -1;
+  opacity: 0.9;
+  margin: 0;
+}
+
+#learning {
+  border-bottom: 50px solid rgb(234, 192, 109);
+  border-left: 30px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0px;
+  width: 1155px;
+  position: relative;
+  top: 4265px;
+  left: 320px;
+  z-index: -1;
+  opacity: 0.9;
+  margin: 0;
+
+}
+
+#resources {
+  border-bottom: 50px solid rgb(132, 208, 132);
+  border-left: 0px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0px;
+  width: 520px;
+  position: relative;
+  top: 4448px;
+  z-index: -1;
+  opacity: 0.9;
+  margin: 0;
+}
+
+#platforms {
+  border-bottom: 50px solid rgb(208, 132, 175);
+  border-left: 30px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0px;
+  width: 1155px;
+  position: relative;
+  top: 4700px;
+  left: 320px;
+  z-index: -1;
+  opacity: 0.9;
+  margin: 0;
+}
