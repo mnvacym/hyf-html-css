@@ -1,0 +1,305 @@
+html{
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: helvetica;
+    background-image: url("https://best-wallpaper.net/wallpaper/2560x1600/1201/Close-up-of-natural-grass_2560x1600.jpg");
+    background-color: rgb(132, 208, 132);
+    background-attachment: fixed;
+  }
+  
+  h3 {
+    color:white;
+    opacity: 0.9;
+    padding: 8px 8px 8px 8px;
+    margin: 0px 0px 0px 0px;
+    display: inline;
+    z-index: 10;
+    background-color: rgb(34, 25, 15);
+    border: none;
+    border-radius: 6px;
+  }
+  h3:hover {
+    background-color: #ea2e49;
+    color:white; 
+  }
+  #navbar {
+    position: fixed;
+    top: 17px;
+    float:left;
+    z-index: 10;
+    opacity: 0.9;
+    animation: mymove 1s ease;
+  }
+  h3 a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 8px 8px 8px;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.6;
+    }
+  }
+  @keyframes mymove{
+    from{top: -30px;}
+    to{top:17px;}
+  }
+  @keyframes animation{
+    from {
+      letter-spacing: 32px;
+    }
+    to {
+      letter-spacing: 0px;
+    }
+  }  
+  
+  h1 {
+    font-family: verdana;
+    text-align: left;
+    font-size: 90px;
+    background-color: rgb(48,40,79);
+    color: white;
+    opacity: 0.8;
+    padding: 60px;
+    padding-bottom:100px;
+    padding-top:100px;
+    width: 60%;
+    position: relative;
+    left: 260px;
+    animation: fadeOut 4s ease;
+    animation-fill-mode: forwards;
+  }
+  
+  .our_planet {
+    background-color: #ea2e49;
+    padding: 15px;
+    width:110px;
+    color: white;
+    opacity: 0.8;
+    position:absolute;
+    top: 70px;
+    left: 180px;
+    animation: fadeOut 10s ease;
+    animation-fill-mode: forwards;
+  }
+  
+  #planet {
+    animation: animation 10s ease;  
+  }
+  
+  .quote_obama {
+    background-color: rgb(222, 195, 92);
+    padding: 80px;
+    width: 270px;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.7;
+    font-size: 25px;
+    position: absolute;
+    right: 30px;
+    top: 180px;
+    animation: fadeOut 4s ease;
+    animation-fill-mode: forwards;
+      
+  }
+  #obama {
+    font-size:15px;
+  }
+  
+  .quote_francois {
+    background-color: rgb(230, 101, 147);
+    padding-right: 40px;
+    padding-left: 450px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 270px;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.3;
+    font-size: 25px;
+    position: absolute;
+    right: 30px;
+    top: 7355px;
+    animation: fadeOut 4s ease;
+    animation-fill-mode: forwards;
+  }
+  #francois {
+    font-size:15px;
+  }
+  
+  .quote_merkel {
+    background-color: rgb(160, 88, 163);
+    padding-right: 50px;
+    padding-left: 450px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 270px;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.5;
+    font-size: 25px;
+    position: absolute;
+    right: 30px;
+    top: 1790px;
+    animation: fadeOut 4s ease;
+    animation-fill-mode: forwards;
+  }
+  #merkel {
+    font-size:15px;
+  }
+  
+  .quote_bankimoon {
+    opacity: 0.5;
+    background-color: rgb(81, 150, 150);
+    padding: 80px;
+    padding-right: 350px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 250px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    left: 30px;
+    top: 4500px;
+    animation: fadeOut 4s ease;
+    animation-fill-mode: forwards;
+  }
+  #bankimoon {
+    font-size:15px;
+  }
+  
+  #stylish_underline1 {
+    position: absolute;
+    top: 260px;
+    left: 480px;
+    opacity: 0.8;
+  }
+  #stylish_underline2 {
+    position: absolute;
+    top: 65px;
+    left: 480px;
+    opacity: 0.8;
+  }
+  
+  #current, #cause, #pyhsical_evidence_and_effects, #what_we_can_do {
+    width: 47%;
+    font-size: 25px;
+    color: white;
+    opacity: 0.7;
+    position: relative;
+    left: 310px;
+    margin: 100px;
+    z-index: 0;
+    text-align: justify;
+  }
+  
+  .than_now_left {
+    float: left;
+    margin-right: -230px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    width: 30%;
+    opacity: 0.9;
+  }
+  .than_now_right {
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    width: 28%;
+    height: 570px;
+    overflow: auto;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 4px;
+    opacity: 0.9;
+  }
+  
+  .current{
+    font-size:40px; 
+    background-color:black; 
+    margin-right:30px; 
+    margin-left:0px; 
+    padding:70px; 
+    padding-left:40px; 
+    padding-right:100px; 
+    border: none; 
+    border-radius: 50%; 
+    width:15%; 
+    shape-outside:circle(40%); 
+    float:left; 
+    opacity:0.8;
+  }
+  .cause{
+    font-size:40px; 
+    background-color:rgb(255, 71, 71); 
+    margin-right:30px; 
+    margin-left:0px; 
+    padding:70px; 
+    padding-left:40px; 
+    padding-right:100px; 
+    border: none; 
+    border-radius: 50%; 
+    width:8%; 
+    shape-outside:circle(40%); 
+    float:left; 
+    opacity:0.8;
+  }
+  .pyhsical_evidence_and_effects{
+    font-size:40px; 
+    background-color:rgb(129, 71, 31); 
+    margin-right:40px; 
+    margin-left:0px; 
+    padding:55px; 
+    padding-left:70px; 
+    padding-right:35px; 
+    border: none; 
+    border-radius: 50%; 
+    width:28%; 
+    shape-outside:circle(40%); 
+    float:left; 
+    opacity:0.8;
+  }
+  .what_we_can_do{
+    font-size:40px; 
+    background-color:rgb(39, 31, 89); 
+    margin-right:30px; 
+    margin-left:0px; 
+    padding:80px; 
+    padding-left:50px; 
+    padding-right:5px; 
+    border: none; 
+    border-radius: 50%; 
+    width:28%; 
+    shape-outside:circle(40%); 
+    float:left; 
+    opacity:0.8;
+  }
+  
+  .footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(230, 101, 147);
+    color: white;
+    text-align: center;
+    padding: 0.1px;
+    opacity: 0.6;
+  }
+  
+  table, th, td {
+    text-align: center;
+    background-color: rgb(96, 80, 65);
+    opacity: 0.9;
+    border: 1px solid;
+  }
+  
+  
