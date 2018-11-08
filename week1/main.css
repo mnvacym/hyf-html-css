@@ -118,9 +118,8 @@ nav img {
   margin-right: auto;
   width: 50%;
   font-size: 20px;
-  position: absolute;
-  top: 825px;
-  left: 25%;
+  position: relative;
+  top: -240px;
   line-height: 1.8;
 }
 
@@ -237,4 +236,24 @@ h2 {
   z-index: -1;
   opacity: 0.9;
   margin: 0;
+}
+
+#footer {
+  width: 100%;
+  background-color:white;
+  color: white;
+  text-align: center;
+  opacity: 0.6;
+  height: 60px;
+}
+
+#linkedin, #github {
+  width: 30px;
+  padding: 15px;
+  transition: width 1s;
+}
+
+#linkedin:hover, #github:hover {
+  width: 40px;
+  transition: width 0.4s;
 }
