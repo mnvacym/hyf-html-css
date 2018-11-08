@@ -28,12 +28,20 @@ html {
   }
 
   #my_name {
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     text-align: center;
     font-size: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
+    animation: letter_spacing 7s ease;
   }
+
+  @keyframes letter_spacing {
+    from {letter-spacing: 32px;}
+    to {letter-spacing: 6px;}
+  }
+
+  
 
   #line {
     width: 300px;
@@ -71,6 +79,12 @@ nav img {
 #navbar {
   position: fixed;
   float: left;
+  animation: navbar 3s ease;
+}
+
+@keyframes navbar {
+  from {left: -80px;}
+  to {left: 8px;}
 }
 
 .icons {
@@ -78,6 +92,7 @@ nav img {
   margin: 10px;
   display: flex;
   transition: width 1s;
+  
 }
 
 .icons:hover {
@@ -225,31 +240,34 @@ h2 {
 }
 
 #platforms {
-  border-bottom: 50px solid rgb(208, 132, 175);
+  border-bottom: 50px solid rgb(70, 35, 5);
   border-left: 30px solid transparent;
   border-right: 0px solid transparent;
   height: 0px;
   width: 1155px;
   position: relative;
-  top: 4700px;
+  top: 4735px;
   left: 320px;
   z-index: -1;
-  opacity: 0.9;
+  opacity: 0.6;
   margin: 0;
 }
 
 #footer {
   width: 100%;
-  background-color:white;
-  color: white;
+  background-color: rgb(232, 92, 92);
   text-align: center;
   opacity: 0.6;
   height: 60px;
+  position: relative;
+  bottom: 0px;
+  border:none;
+  border-radius: 25px;
 }
 
 #linkedin, #github {
   width: 30px;
-  padding: 15px;
+  margin: 15px;
   transition: width 1s;
 }
 
