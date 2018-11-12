@@ -8,6 +8,11 @@ body {
   color: black;    
 }
 
+#main {
+  width: 100%;
+  margin: auto;
+}
+
 #my_photo {
   border: none;
   border-radius: 50%;
