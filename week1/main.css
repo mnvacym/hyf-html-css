@@ -5,7 +5,20 @@ html {
 body {
   background-color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: black;    
+  color: black;
+  font-size: 16px;   
+}
+
+p {
+  font-size: 120%;
+}
+
+h1 {
+  font-size: 250%;
+}
+
+h3 {
+  font-size: 150%;
 }
 
 #main {
@@ -93,6 +106,7 @@ div img {
   width: 33px;
   margin: 5px;
   display: flex;
+  flex-direction: column;
   transition: width 1s;
 }
 
@@ -140,6 +154,7 @@ div img {
 }
 
 h2 {
+  font-size: 200%;
   color: white;
 }
 
@@ -148,9 +163,9 @@ h2 {
   border-left: 0px solid transparent;
   border-right: 30px solid transparent;
   height: 0px;
-  width: 540px;
+  width: 570px;
   position: relative;
-  top: 188px;
+  top: 205px;
   z-index: -1;
   opacity: 0.9;
   margin: 0;
@@ -161,10 +176,10 @@ h2 {
   border-left: 30px solid transparent;
   border-right: 0px solid transparent;
   height: 0px;
-  width: 1155px;
+  width: 1140px;
   position: relative;
-  top: 550px;
-  left: 320px;
+  top: 695px;
+  left: 335px;
   z-index: -1;
   opacity: 0.9;
   margin: 0;
@@ -175,9 +190,9 @@ h2 {
   border-left: 0px solid transparent;
   border-right: 30px solid transparent;
   height: 0px;
-  width: 520px;
+  width: 580px;
   position: relative;
-  top: 2013px;
+  top: 2278px;
   z-index: -1;
   opacity: 0.9;
   margin: 0;
@@ -190,7 +205,7 @@ h2 {
   height: 0px;
   width: 1155px;
   position: relative;
-  top: 3060px;
+  top: 3427px;
   left: 320px;
   z-index: -1;
   opacity: 0.9;
@@ -202,9 +217,9 @@ h2 {
   border-left: 0px solid transparent;
   border-right: 30px solid transparent;
   height: 0px;
-  width: 520px;
+  width: 550px;
   position: relative;
-  top: 3940px;
+  top: 4405px;
   z-index: -1;
   opacity: 0.9;
   margin: 0;
@@ -217,7 +232,7 @@ h2 {
   height: 0px;
   width: 1155px;
   position: relative;
-  top: 4265px;
+  top: 4767px;
   left: 320px;
   z-index: -1;
   opacity: 0.9;
@@ -229,9 +244,9 @@ h2 {
   border-left: 0px solid transparent;
   border-right: 30px solid transparent;
   height: 0px;
-  width: 520px;
+  width: 570px;
   position: relative;
-  top: 4448px;
+  top: 4980px;
   z-index: -1;
   opacity: 0.9;
   margin: 0;
@@ -244,7 +259,7 @@ h2 {
   height: 0px;
   width: 1155px;
   position: relative;
-  top: 4735px;
+  top: 5305px;
   left: 320px;
   z-index: -1;
   opacity: 0.6;
