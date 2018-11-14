@@ -3,22 +3,29 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color:#16161E;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: black;
-  font-size: 16px;   
-}
-
-p {
-  font-size: 120%;
+  color: #aaaab3;
+  font-size: 20px;
+  margin: 0;
+  line-height: 1.8;
+  text-align: center;  
 }
 
 h1 {
   font-size: 250%;
 }
 
+h2 {
+  font-size: 200%;
+}
+
 h3 {
   font-size: 150%;
+}
+
+p {
+  font-size: 120%;
 }
 
 #main {
@@ -34,8 +41,8 @@ h3 {
   margin-right: auto;
   margin-top: 10%;
   margin-bottom: 2%;
-  width: 20%;
-  opacity: 0.8;
+  width: 25%;
+  opacity: 0.5;
   transition: width 1s;
 }
 
@@ -44,10 +51,201 @@ h3 {
   transition: width 1s;
 }
 
+.about_me {
+  background-color: #ea2e49;
+  padding: 15px;
+  width:150px;
+  color: white;
+  opacity: 0.5;
+  position:absolute;
+  top: 30px;
+  left: 680px;
+  animation: fadeOut 10s ease;
+  animation-fill-mode: forwards;
+  border-radius: 40px;
+  transition: width 1s, transform 1s;
+  transform: rotate(100deg);
+  
+}
+
+.about_me:hover {
+  width: 200px;
+  transform: rotate(0deg);
+  transition: width 1s, transform 1s;
+  
+}
+
+.work {
+  background-color: #503178;
+  padding: 15px;
+  width:150px;
+  color: white;
+  opacity: 0.5;
+  position:absolute;
+  top: 130px;
+  left: 460px;
+  animation: fadeOut 10s ease;
+  animation-fill-mode: forwards;
+  border-radius: 40px;
+  transition: width 1s, transform 1s;
+  transform: rotate(25deg);
+  
+}
+
+.work:hover {
+  width: 200px;
+  transform: rotate(0deg);
+  transition: width 1s, transform 1s;  
+}
+
+.education {
+  background-color: #B1733F;
+  padding: 15px;
+  width:150px;
+  color: white;
+  opacity: 0.5;
+  position:absolute;
+  top: 290px;
+  left: 410px;
+  animation: fadeOut 10s ease;
+  animation-fill-mode: forwards;
+  border-radius: 40px;
+  transition: width 1s, transform 1s;
+  transform: rotate(-15deg);
+  
+}
+
+.education:hover {
+  width: 200px;
+  transform: rotate(0deg);
+  transition: width 1s, transform 1s;
+  
+}
+
+.skills {
+  background-color: #29606D;
+  padding: 15px;
+  width:150px;
+  color: white;
+  opacity: 0.5;
+  position:absolute;
+  top: 420px;
+  left: 460px;
+  animation: fadeOut 10s ease;
+  animation-fill-mode: forwards;
+  border-radius: 40px;
+  transition: width 1s, transform 1s;
+  transform: rotate(-25deg);
+  
+}
+
+.skills:hover {
+  width: 200px;
+  transform: rotate(0deg);
+  transition: width 1s, transform 1s;
+  
+}
+
+.hobbies {
+  background-color: #B1AF3F;
+  padding: 15px;
+  width:150px;
+  color: white;
+  opacity: 0.5;
+  position:absolute;
+  top: 160px;
+  left: 890px;
+  animation: fadeOut 10s ease;
+  animation-fill-mode: forwards;
+  border-radius: 40px;
+  transition: width 1s, transform 1s;
+  transform: rotate(-25deg);
+  
+}
+
+.hobbies:hover {
+  width: 200px;
+  transform: rotate(0deg);
+  transition: width 1s, transform 1s;
+  
+}
+
+.additional_information {
+  background-color: #324475;
+  padding: 15px;
+  width:150px;
+  color: white;
+  opacity: 0.5;
+  position:absolute;
+  top: 300px;
+  left: 900px;
+  animation: fadeOut 10s ease;
+  animation-fill-mode: forwards;
+  border-radius: 40px;
+  transition: width 1s, transform 1s;
+  transform: rotate(5deg);
+  
+}
+
+.additional_information:hover {
+  width: 200px;
+  transform: rotate(0deg);
+  transition: width 1s, transform 1s;
+  
+}
+
+.contact {
+  background-color: #328D32;
+  padding: 15px;
+  width:150px;
+  color: white;
+  opacity: 0.5;
+  position:absolute;
+  top: 420px;
+  left: 880px;
+  animation: fadeOut 10s ease;
+  animation-fill-mode: forwards;
+  border-radius: 40px;
+  transition: width 1s, transform 1s;
+  transform: rotate(15deg);
+  
+}
+
+.contact:hover {
+  width: 200px;
+  transform: rotate(0deg);
+  transition: width 1s, transform 1s;
+  
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 #my_name {
   letter-spacing: 6px;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
   animation: letter_spacing 7s ease;
@@ -91,7 +289,7 @@ div img {
   margin: 5px 5px 5px 5px;
 }
 
-#navbar {
+/*#navbar {
   position: fixed;
   float: left;
   animation: navbar 3s ease;
@@ -100,9 +298,9 @@ div img {
 @keyframes navbar {
   from {left: -80px;}
   to {left: 8px;}
-}
+}*/
 
-.icons {
+/*.icons {
   width: 33px;
   margin: 5px;
   display: flex;
@@ -118,11 +316,11 @@ div img {
   /**animation: zoom 0.4s ease;
   animation-fill-mode: forwards;
   animation-direction: alternate;**/
-  width: 60px; 
+  /*width: 60px; 
   transition: width 0.4s;
-}
+}*/
 
-@keyframes zoom {
+/*@keyframes zoom {
   from{width: 30px;}
   to{width: 60px;}
 }
@@ -139,26 +337,20 @@ div img {
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
+}*/
 
 .text {
   text-align: center;
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 65%;
   font-size: 20px;
   position: relative;
-  top: -240px;
   line-height: 1.8;
 }
 
-h2 {
-  font-size: 200%;
-  color: white;
-}
-
-#about {
+/*#about {
   border-bottom: 50px solid rgb(229, 107, 113);
   border-left: 0px solid transparent;
   border-right: 30px solid transparent;
@@ -264,18 +456,7 @@ h2 {
   z-index: -1;
   opacity: 0.6;
   margin: 0;
-}
-
-#footer {
-  width: 100%;
-  background-color: black;
-  text-align: center;
-  opacity: 0.7;
-  height: 60px;
-  position: relative;
-  bottom: 0px;
-  margin-bottom:0;
-}
+} */
 
 #linkedin, #github {
   width: 30px;
