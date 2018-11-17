@@ -54,14 +54,12 @@ p {font-size: 120%;}
   border-radius: 40px;
   transition: width 1s, transform 1s;
   transform: rotate(100deg);
-  
 }
 
 .about_me:hover {
   width: 200px;
   transform: rotate(0deg);
   transition: width 1s, transform 1s;
-  
 }
 
 .work {
@@ -78,7 +76,6 @@ p {font-size: 120%;}
   border-radius: 40px;
   transition: width 1s, transform 1s;
   transform: rotate(25deg);
-  
 }
 
 .work:hover {
@@ -101,14 +98,12 @@ p {font-size: 120%;}
   border-radius: 40px;
   transition: width 1s, transform 1s;
   transform: rotate(-15deg);
-  
 }
 
 .education:hover {
   width: 200px;
   transform: rotate(0deg);
   transition: width 1s, transform 1s;
-  
 }
 
 .skills {
@@ -125,14 +120,12 @@ p {font-size: 120%;}
   border-radius: 40px;
   transition: width 1s, transform 1s;
   transform: rotate(-25deg);
-  
 }
 
 .skills:hover {
   width: 200px;
   transform: rotate(0deg);
   transition: width 1s, transform 1s;
-  
 }
 
 .hobbies {
@@ -149,14 +142,12 @@ p {font-size: 120%;}
   border-radius: 40px;
   transition: width 1s, transform 1s;
   transform: rotate(-25deg);
-  
 }
 
 .hobbies:hover {
   width: 200px;
   transform: rotate(0deg);
   transition: width 1s, transform 1s;
-  
 }
 
 .additional_information {
@@ -173,14 +164,12 @@ p {font-size: 120%;}
   border-radius: 40px;
   transition: width 1s, transform 1s;
   transform: rotate(5deg);
-  
 }
 
 .additional_information:hover {
   width: 200px;
   transform: rotate(0deg);
   transition: width 1s, transform 1s;
-  
 }
 
 .contact {
@@ -197,14 +186,12 @@ p {font-size: 120%;}
   border-radius: 40px;
   transition: width 1s, transform 1s;
   transform: rotate(15deg);
-  
 }
 
 .contact:hover {
   width: 200px;
   transform: rotate(0deg);
   transition: width 1s, transform 1s;
-  
 }
 
 @keyframes rotate {
@@ -246,7 +233,7 @@ img {
 }  
 
 #line {
-  width: 20%;
+  /*width: 20%;
   height: 100px;
   display: block;
   margin-left: auto;
@@ -254,7 +241,20 @@ img {
   margin-top: 0px;
   margin-bottom: 0px;
   position: relative;
-  top: -35px;  
+  top: -35px;*/
+  color: #aaaab3;
+  border-bottom: 1px solid ;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0px;
+  width: 20%;
+  position: absolute;
+  top: 625px;
+  left: 40%;
+  display: block;
+  z-index: -1;
+  opacity: 0.9;
+  margin: 0; 
 }
 
 #profession {
@@ -263,7 +263,7 @@ img {
   margin-top: 0px;
   margin-bottom: 0px;
   position: relative;
-  top: -90px;
+  top: 0px;
 }  
 
 #header {
