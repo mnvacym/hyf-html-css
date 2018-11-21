@@ -12,3 +12,4 @@ https://ammarvehbi.github.io/hyf-html-css/week0
 Here you can find my homework hosted via Github :octocat:
 
 https://ammarvehbi.github.io/hyf-html-css/week1
+https://ammarvehbi.github.io/hyf-html-css/week2
