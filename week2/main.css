@@ -132,14 +132,14 @@ img {
             box-shadow: 2px 9px 52px 6px rgba(166,164,166,1);
             position: relative;
             top: 0px;
-            transition: box-shadow 0.2s, top 0.5s;
+            transition: box-shadow 0.3s, top 0.5s;
         }
 
         li:hover {
             box-shadow: 0.1px 0.1px 10px 3px rgba(166,164,166,1);
             position: relative;
             top: 7px;
-            transition: box-shadow 0.2s, top 0.5s;
+            transition: box-shadow 0.3s, top 0.5s;
         }
 
         li:nth-child(1) {
@@ -189,6 +189,16 @@ img {
             width: 30%;
             list-style: none;
             box-shadow: 2px 2px 20px -1px rgba(0,0,0,0.75);
+            position: relative;
+            top: 0px;
+            transition: box-shadow 0.3s, top 0.4s;
+        }
+
+        li:hover {
+            box-shadow: 0.1px 0.1px 5px 1px rgba(166,164,166,1);
+            position: relative;
+            top: 3px;
+            transition: box-shadow 0.3s, top 0.4s;
         }
 
         li:nth-child(1), li:nth-child(2) {
@@ -235,7 +245,17 @@ img {
             width: 45%;
             height: 300px;
             list-style: none;
-            box-shadow: 0.5px 0.5px 6px -1px rgba(0,0,0,0.75);
+            box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
+            position: relative;
+            top: 0px;
+            transition: box-shadow 0.4s, top 0.5s;
+        }
+
+        li:hover {
+            box-shadow: 0.1px 0.1px 3px 1px rgba(166,164,166,1);
+            position: relative;
+            top: 3px;
+            transition: box-shadow 0.4s, top 0.5s;
         }
 
         li:nth-child(1) {
