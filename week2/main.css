@@ -81,7 +81,6 @@ h3 {margin-top: 2%; font-size: 24px;}
 
 img {
     margin: 0 auto;
-    padding: 10px 0;
     border-radius: 10px;
     position: relative;
     top: -5%;
@@ -120,7 +119,7 @@ img {
 
         li:nth-child(1) img {width: 50%; margin: auto;}
     
-        li img {width: 80%;}
+        li img {width: 80%; padding: 40px 0;}
 
         h1 {font-size: 3rem;}
         
@@ -155,7 +154,7 @@ img {
 
         li:nth-child(1) p, li:nth-child(2) p {font-size: 1.5rem;}
 
-        li img {width: 80%;}
+        li img {width: 80%; padding: 50px 0;}
 
         h1 {font-size: 2rem;}
         
@@ -193,7 +192,11 @@ img {
 
         li:nth-child(1) p {font-size: 1.1rem;}
 
-        li img {width: 80%;}
+        li img {
+            width: 80%;
+            position: relative;
+            top: -19px;
+        }
 
         h1 {font-size: 1.7rem;}
         
