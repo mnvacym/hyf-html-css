@@ -1,17 +1,7 @@
-::-webkit-scrollbar {width: 5px;}
-
-::-webkit-scrollbar-corner {height: 10px;}
-
-::-webkit-scrollbar-track {box-shadow: inset 0 0 0px grey; border-radius: 20px;}
-
-::-webkit-scrollbar-thumb {background: grey; border-radius: 20px;}
-
-::-webkit-scrollbar-thumb:hover {width: 10px; background-color: #272626;}
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 100%;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -19,51 +9,8 @@ section {clear: both;}
 
 *, *:after, *:before {box-sizing: border-box;}
 
-main {margin: 0 auto;}
-
-p {
-    line-height: 1.8em;
-    text-align: center;
-    height: auto;
-    width: 100%;
-    font-size: 20px;
-    margin: 0;
-    padding: 2%;
-    color: azure;
-    background-color: #857594;
-    grid-row: 3 / 4;
-}
-
-@keyframes li-zoomin {
-    0% {transform: scale(0.5,0.5); opacity: 0;}
-    100% {transform: scale(1,1); opacity: 0.8;}
-}
-
-li {
-    border: 1px solid;
-    border-style: none;
-    margin-right: 3%;
-    margin-bottom: 3%;
-    padding: 0;
-    height: 500px;
-    overflow: auto;
-    text-align: center;
-    display: inline-block;
-    animation: li-zoomin 1.5s ease;
-    animation-fill-mode: forwards;
-    display: grid;
-    grid-template-rows: 60px 1fr 1fr;
-}
-
-li:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 h1 {
     text-align: center;
-    font-size: 3em;
     margin: 0;
     position: relative;
     top: 20px;
@@ -77,150 +24,131 @@ h1 {
 
 h2 {margin-top: 50px; padding: 10px;}
 
-h3 {margin-top: 2%; font-size: 24px;}
-
-img {
-    margin: 0 auto;
-    border-radius: 10px;
+li {
+    margin-right: 3%;
+    margin-bottom: 3%;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    animation: li-zoomin 1.5s ease;
+    animation-fill-mode: forwards;
     position: relative;
-    top: -5%;
+    top: 0;
 }
 
+h3 {margin-top: 2%;}
 
-/* float grid */
+li img {width: 80%; position: relative; top: 0;}
 
-    /* laptop and wider screens */
-    @media only screen and (min-width: 1024px) {
-        #grid-floats .grid-item {float: left;}
+p {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 2%;
+    color: azure;
+    background-color: #857594;
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes li-zoomin {
+    0% {transform: scale(0.5,0.5); opacity: 0;}
+    100% {transform: scale(1,1); opacity: 0.8;}
+}
+
+/* float */
+#grid-floats .grid-item {float: left;}
+
+/* flex-box */
+#grid-flex {display: flex; flex-flow: row wrap;}
+
+/* laptop and wider screens */
+@media only screen and (min-width: 1024px) {
+    li {
+        width: 22%;
+        list-style: none;
+        box-shadow: 2px 9px 52px 6px rgba(166,164,166,1);
+        transition: box-shadow 0.3s, top 0.5s;
+        height: 650px;
+    }
+
+    li:hover {
+        box-shadow: 0.1px 0.1px 10px 3px rgba(166,164,166,1);
+        position: relative;
+        top: 7px;
+        transition: box-shadow 0.3s, top 0.5s;
+    }
+
+    li:nth-child(1) {width: 47%;}
+
+    li:nth-child(1) p {font-size: 1.7rem;}
+
+    li:nth-child(1) img {width: 50%; position: absolute; top: 0; left: 25%; z-index: -1;}
+
+    h1 {font-size: 3rem;}
     
-        li {
-            width: 22%;
-            list-style: none;
-            box-shadow: 2px 9px 52px 6px rgba(166,164,166,1);
-            position: relative;
-            top: 0px;
-            transition: box-shadow 0.3s, top 0.5s;
-        }
-
-        li:hover {
-            box-shadow: 0.1px 0.1px 10px 3px rgba(166,164,166,1);
-            position: relative;
-            top: 7px;
-            transition: box-shadow 0.3s, top 0.5s;
-        }
-
-        li:nth-child(1) {
-            width: 47%;
-            text-align: center;
-            display: inline-block;
-        }
-
-        li:nth-child(1) p {font-size: 1.7rem;}
-
-        li:nth-child(1) img {width: 50%; margin: auto;}
+    h2 {font-size: 2rem;}
     
-        li img {width: 80%; padding: 40px 0;}
+    h3 {font-size: 1.5rem;}
+    
+    p {font-size: 1.3rem; line-height: 1.5em; height: 320px;}
+}
 
-        h1 {font-size: 3rem;}
-        
-        h2 {font-size: 2rem;}
-        
-        h3 {font-size: 1.5rem;}
-        
-        p {font-size: 1.3rem; line-height: 1.5em;}
+/* tablets */
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+    li {
+        width: 30%;
+        box-shadow: 2px 2px 20px -1px rgba(0,0,0,0.75);
+        transition: box-shadow 0.3s, top 0.4s;
+        height: 650px;
     }
 
-    /* tablets */
-    @media only screen and (min-width: 480px) and (max-width: 1023px) {
-        #grid-floats .grid-item {float: left;}
-
-        li {
-            width: 30%;
-            list-style: none;
-            box-shadow: 2px 2px 20px -1px rgba(0,0,0,0.75);
-            position: relative;
-            top: 0px;
-            transition: box-shadow 0.3s, top 0.4s;
-        }
-
-        li:hover {
-            box-shadow: 0.1px 0.1px 5px 1px rgba(166,164,166,1);
-            position: relative;
-            top: 3px;
-            transition: box-shadow 0.3s, top 0.4s;
-        }
-
-        li:nth-child(1), li:nth-child(2) {width: 46.5%;}
-
-        li:nth-child(1) p, li:nth-child(2) p {font-size: 1.5rem;}
-
-        li img {width: 80%; padding: 50px 0;}
-
-        h1 {font-size: 2rem;}
-        
-        h2 {font-size: 1.7rem;}
-        
-        h3 {font-size: 1.2rem;}
-        
-        p {font-size: 1rem; line-height: 1.5em;}
+    li:hover {
+        box-shadow: 0.1px 0.1px 5px 1px rgba(166,164,166,1);
+        position: relative;
+        top: 3px;
+        transition: box-shadow 0.3s, top 0.4s;
     }
 
-        /* mobiles */
-    @media only screen and (max-width: 480px) {        
-        main {width: 100%;}
-        
-        #grid-floats .grid-item {float: left;}
+    li:nth-child(1), li:nth-child(2) {width: 46.5%;}
 
-        li {
-            width: 45%;
-            height: 300px;
-            list-style: none;
-            box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
-            position: relative;
-            top: 0px;
-            transition: box-shadow 0.4s, top 0.5s;
-        }
+    li:nth-child(1) p, li:nth-child(2) p {font-size: 1.5rem;}
 
-        li:hover {
-            box-shadow: 0.1px 0.1px 3px 1px rgba(166,164,166,1);
-            position: relative;
-            top: 3px;
-            transition: box-shadow 0.4s, top 0.5s;
-        }
+    h1 {font-size: 2rem;}
+    
+    h2 {font-size: 1.7rem;}
+    
+    h3 {font-size: 1.2rem;}
+    
+    p {font-size: 1rem; line-height: 1.5em; height: 400px;}
+}
 
-        li:nth-child(1) {width: 92.7%;}
-
-        li:nth-child(1) p {font-size: 1.1rem;}
-
-        li img {
-            width: 80%;
-            position: relative;
-            top: -19px;
-        }
-
-        h1 {font-size: 1.7rem;}
-        
-        h2 {font-size: 1.4rem;}
-        
-        h3 {font-size: 0.8rem;}
-        
-        p {font-size: 0.8rem; line-height: 1.5em;}
+    /* mobiles */
+@media only screen and (max-width: 480px) {
+    li {
+        width: 45%;
+        height: 300px;
+        box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
+        transition: box-shadow 0.2s, top 0.3s;
+        height: 450px;
     }
 
-
-/* flex-box grid (properties which are not written below, are inherited from float-grid section)*/
-
-    /* laptops and wider screens */
-    @media only screen and (min-width: 1024px) {        
-        #grid-flex {display: flex; flex-flow: row wrap;}
+    li:hover {
+        box-shadow: 0.1px 0.1px 3px 1px rgba(166,164,166,1);
+        position: relative;
+        top: 3px;
+        transition: box-shadow 0.2s, top 0.3s;
     }
 
-        /* tablets */
-    @media only screen and (min-width: 480px) and (max-width: 1024px) {
-        #grid-flex {display: flex; flex-flow: row wrap;}
-    }
+    li:nth-child(1) {width: 92.7%;}
 
-        /* mobiles */
-    @media only screen and (max-width: 480px) {
-        #grid-flex {display: flex; flex-flow: row wrap;}
-    }
+    li:nth-child(1) p {font-size: 1.1rem;}
+
+    h1 {font-size: 1.7rem;}
+    
+    h2 {font-size: 1.4rem;}
+    
+    h3 {font-size: 0.8rem;}
+    
+    p {font-size: 0.8rem; line-height: 1.5em; height: 200px;}
+}
