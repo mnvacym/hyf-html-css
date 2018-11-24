@@ -38,7 +38,7 @@ li {
 
 h3 {margin-top: 2%;}
 
-li img {width: 80%; position: relative; top: 0;}
+li img {width: 80%; position: relative;}
 
 p {
     text-align: center;
@@ -69,7 +69,7 @@ p {
         list-style: none;
         box-shadow: 2px 9px 52px 6px rgba(166,164,166,1);
         transition: box-shadow 0.3s, top 0.5s;
-        height: 650px;
+        height: 630px;
     }
 
     li:hover {
@@ -83,7 +83,7 @@ p {
 
     li:nth-child(1) p {font-size: 1.7rem;}
 
-    li:nth-child(1) img {width: 50%; position: absolute; top: 0; left: 25%; z-index: -1;}
+    li:nth-child(1) img {width: 60%; position: absolute; top: 5%; left: 20%; z-index: -1;}
 
     h1 {font-size: 3rem;}
     
@@ -91,7 +91,7 @@ p {
     
     h3 {font-size: 1.5rem;}
     
-    p {font-size: 1.3rem; line-height: 1.5em; height: 320px;}
+    p {font-size: 1.3rem; line-height: 1.5em; height: 270px;}
 }
 
 /* tablets */
@@ -100,7 +100,7 @@ p {
         width: 30%;
         box-shadow: 2px 2px 20px -1px rgba(0,0,0,0.75);
         transition: box-shadow 0.3s, top 0.4s;
-        height: 650px;
+        height: 500px;
     }
 
     li:hover {
@@ -114,13 +114,15 @@ p {
 
     li:nth-child(1) p, li:nth-child(2) p {font-size: 1.5rem;}
 
+    li:nth-child(1) img, li:nth-child(2) img {width: 65%; position: absolute; top: 10%; left: 17.5%; z-index: -1;}
+
     h1 {font-size: 2rem;}
     
     h2 {font-size: 1.7rem;}
     
     h3 {font-size: 1.2rem;}
     
-    p {font-size: 1rem; line-height: 1.5em; height: 400px;}
+    p {font-size: 1rem; line-height: 1.5em; height: 250px;}
 }
 
     /* mobiles */
@@ -130,7 +132,7 @@ p {
         height: 300px;
         box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
         transition: box-shadow 0.2s, top 0.3s;
-        height: 450px;
+        height: 360px;
     }
 
     li:hover {
@@ -143,6 +145,8 @@ p {
     li:nth-child(1) {width: 92.7%;}
 
     li:nth-child(1) p {font-size: 1.1rem;}
+
+    li:nth-child(1) img {width: 60%; position: absolute; top: 5%; left: 20%; z-index: -1;}
 
     h1 {font-size: 1.7rem;}
     
