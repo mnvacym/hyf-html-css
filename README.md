@@ -15,4 +15,8 @@ Here you can find my homework hosted via Github
 
 :octocat: https://ammarvehbi.github.io/hyf-html-css/week2
 
+<<<<<<< HEAD
 :octocat: https://ammarvehbi.github.io/hyf-html-css/week3
+=======
+:octocat: https://ammarvehbi.github.io/hyf-html-css/week3
+>>>>>>> 1977a1c27032b59ac4dd2343d524e5b54f10a9d9
