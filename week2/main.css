@@ -66,7 +66,6 @@ p {
 @media only screen and (min-width: 1024px) {
     li {
         width: 22%;
-        list-style: none;
         box-shadow: 2px 9px 52px 6px rgba(166,164,166,1);
         transition: box-shadow 0.3s, top 0.5s;
         height: 630px;
