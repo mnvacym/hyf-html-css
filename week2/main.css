@@ -30,7 +30,7 @@ li {
     padding: 0;
     overflow: hidden;
     text-align: center;
-    animation: li-zoomin 1.5s ease;
+    animation: li-zoomin  1.5s ease;
     animation-fill-mode: forwards;
     position: relative;
     top: 0;
