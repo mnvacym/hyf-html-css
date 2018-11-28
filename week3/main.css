@@ -21,16 +21,69 @@ body {
 
 *, *:after, *:before {box-sizing: border-box;}
 
-header {margin-bottom: 4.5%;}
-
-#background_header {
-    position: absolute;
-    top: 0;
-    z-index: -1;
+header {
+    margin-bottom: 4.5%;
+    background-image: url("images/HeroImage_ShoppingInsights2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
 }
 
-.think_with_google_svg {height: 1.75rem; width: 11.625rem;}
+.sidebar-3stick {
+    position: relative; 
+    top: -.7rem;
+    margin-right: 1rem;
+}
+
+/*///////////////////////////////   SIDEBAR - START     ////////////////////////////////////////////////////////*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #424242;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: black;
+    background: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#mySidenav hr {
+    width: 80%;
+}
+/*///////////////////////////////   SIDEBAR - END     ////////////////////////////////////////////////////////*/
+
+.think_with_google_svg {
+    width: 14rem;
+    position: relative; 
+    top: -.5rem;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
 
 .head_of_header {
     display: flex;
@@ -45,9 +98,22 @@ header {margin-bottom: 4.5%;}
     position: relative; 
     justify-content: flex-end; 
     display: flex;
+    width: 100%;
 }
 
-#location_selector-top, option {
+#location_selector-top {
+    background: transparent;
+    border: none;
+    color: #757575;
+    font-size: 1rem;
+    margin: 0 3.5%;
+    padding: .125rem .9375rem .125rem .625rem;
+    cursor: pointer;
+    position: relative;
+    top: -.4rem;
+}
+
+option {
     background: #fff;
     border: none;
     color: #757575;
@@ -56,19 +122,20 @@ header {margin-bottom: 4.5%;}
     padding: .125rem .9375rem .125rem .625rem;
     cursor: pointer;
     position: relative;
-    top: 2px;
+    top: -.4rem;
 }
 
-.navbar-item1 {padding: 1rem 1.75rem .75rem .875rem;}
 
-span {margin-right: 1rem;}
+.navbar-item1 {padding: .75rem 1rem .75rem .875rem;}
+
+span {margin-right: .3rem;}
 
 /*//////////////////////////////////////////////////////
 /////////////    DROPDOWN MENUS-start   ////////////////
 //////////////////////////////////////////////////////*/
 
 .dropbtn {
-    padding: 1rem 1.75rem .75rem .875rem;
+    padding: 1rem 1rem .75rem .875rem;
     border: 0;
     border-radius: .125rem;
     margin-bottom: 1rem;
@@ -123,17 +190,20 @@ i {
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1; color: black;}
+.dropdown-content a:hover {background: #DDDDDD; color: black;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #f1f1f1; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
 
-.dropbtn:hover {
+.dropbtn:hover, .navbar-item1:hover {
 	background-color: #f1f1f1;
-    padding: 1rem 1.75rem .75rem .875rem;
+    padding: 1rem 1rem .75rem .875rem;
     z-index: 1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 0;
+    border-radius: .125rem;
+    cursor: pointer;
 }
 
 .dropdown:hover .arrow, .dropbtn:hover .arrow {
@@ -148,20 +218,18 @@ i {
 /////////////////////////////////////////////////////////// */
 
 .search_button {
-    display: inline-block;
-    vertical-align: bottom;
     position: relative;
-    left: -2rem;
+    right: 1.5rem;
     top: -.3rem;
     fill: #424242;
-    width: 2.8%;
+    width: 30px;
     cursor: pointer;
 }
 
-.content_of_header {
-    width: 72rem;
-    margin-left: auto;
-    margin-right: auto;
+.content_of_header_h1-p-button {
+    position: relative;
+    left: 7rem;
+    margin-right: 10rem;
 }
 
 h1 {
@@ -195,7 +263,7 @@ h1 {
 
 .explore-link {
     position: absolute;
-    top: 20rem;
+    top: 17rem;
     right: 4rem;
     width: 20%;
     color: #3367d6;
@@ -212,6 +280,13 @@ h1 {
     position: relative;
     left: .4rem;
     top: .4rem;
+}
+
+h2 {
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+    padding-top: 3.5rem;
+    font-size: 1.9375rem;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -234,46 +309,34 @@ h1 {
     z-index: 1;
 }
 
-.card-1-img, .card-2-img, .card-3-img, .card-4-img, .card-5-img .card-6-img {
-    position: relative;
-    z-index: -1;
-}
-
 #collection {
     fill: currentColor;
     width: 7%;
     margin-right: 3%;
 }
 
-.description-of-card {color: #757575; font-size: .875rem;}
-
-.card-title {font-size: 1.125rem; line-height: 1.4;}
-
 #content-grid, h3 {display: flex; flex-wrap: wrap;}
 
 .cards {
     list-style: none;
     position: relative;
-    height: 340px;
+    min-height: 360px;
     width: 23%;
     background-color: white;
     z-index: -1;
     margin-right: 2%;
     margin-bottom: 2%;
     box-shadow:0 .125rem .625rem 0 rgba(0,0,0,.11);
+    text-align: center;
 }
 
 .card-1, .card-6 {width: 48%;}
 
-.card-1-background, .card-6-background {height: 340px; width: 100%;}
-
-.card-1-img, .card-2-img, .card-4-img, .card-5-img, .card-6-img {top: -1rem;}
+.card-1-background, .card-6-background {height: 360px; width: 100%;}
 
 .card-3-img {top: -65px; }
 
 li {overflow: hidden;}
-
-li img {width: 100%; position: absolute; z-index: -1;}
 
 .card-title {
     text-align: center;
@@ -282,18 +345,30 @@ li img {width: 100%; position: absolute; z-index: -1;}
     padding: 10%;
     position: absolute;
     top: 45%;
+    font-size: 1.125rem; 
+    line-height: 1.4;
 }
 
 .card-2-p, .card-3-p, .card-4-p, .card-5-p {
     position: absolute;
-    padding: 6%;
-    bottom: 3%;
-    left: 20%;
+    bottom: 7%;
+    left: 10%;
+    right: 10%;
+    color: #757575; 
+    font-size: .875rem;
+}
+
+.card-1-p, .card-6-p {
+    color: #fff;
+    position: absolute;
+    bottom: 1.7rem;
+    left: 1.5rem;
+    font-size: .875rem;
 }
 
 .card-1-h3, .card-6-h3 {
-    top: 33%;
-    left: -2.5rem;
+    position: absolute;
+    left: -1.3rem;
     width: 90%;
     text-align: left;
     color: #fff;
@@ -301,19 +376,44 @@ li img {width: 100%; position: absolute; z-index: -1;}
     line-height: 1.4;   
 }
 
-.card-1-p, .card-6-p {
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    padding: 5%;
-    left: -.5rem;
+.card-1 {
+    background-image: url("images/1390_Thumb_small.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-h2 {
-    font-weight: 300;
-    margin-bottom: 2.5rem;
-    padding-top: 3.5rem;
-    font-size: 1.9375rem;
+.card-2 {
+    background-image: url("images/1399_Thumbnail_Holiday-Deal-Seekers-Article.jpg");
+    background-repeat: no-repeat;
+    background-size: 20rem;
+    background-position: top, center;
+}
+
+.card-3 {
+    background-image: url("images/Shopping_Hub_Thumb.jpg");
+    background-repeat: no-repeat;
+    background-size: 20rem 10rem;
+    background-position: top;
+}
+
+.card-4 {
+    background-image: url("images/1393_Thumb.jpg");
+    background-repeat: no-repeat;
+    background-size: 20rem 10rem;
+    background-position: top;
+}
+
+.card-5 {
+    background-image: url("images/1391_Thumbnail_Sports-Nostalgia.jpg");
+    background-repeat: no-repeat;
+    background-size: 20rem;
+    background-position: top, center;
+}
+
+.card-6 {
+    background-image: url("images/1392_Thumbnail_Inside_Google_Marketing_Video_Jabari_Hearn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -346,8 +446,6 @@ a {color: #3367d6; text-decoration: none;}
 
 .content-3-grid-columns {display: flex;}
 
-.content-3-grid-columns img {position: relative;}
-
 .content-3-grid-columns li {
     margin-right: 3%;
     height: 450px;
@@ -356,11 +454,40 @@ a {color: #3367d6; text-decoration: none;}
     cursor: pointer;
 }
 
+.content-3-card-1 {
+    background-image: url("images/bedazzler-culture-trends.gif");
+    background-repeat: no-repeat;
+    background-size: 20rem;
+    background-position: top, center;
+}
+
+.content-3-card-2 {
+    background-image: url("images/bedazzler-competetive-analysis.gif");
+    background-repeat: no-repeat;
+    background-size: 20rem;
+    background-position: top, center;
+}
+
+.content-3-card-3 {
+    background-image: url("images/bedazzler-consumer-insights.gif");
+    background-repeat: no-repeat;
+    background-size: 20rem;
+    background-position: top, center;
+}
+
+.content-3-card-4 {
+    background-image: url("images/bedazzler-diagnostics.gif");
+    background-repeat: no-repeat;
+    background-size: 20rem;
+    background-position: top, center;
+}
+
 .content-3-grid-columns p {
     color: #757575;
     font-size: .875rem;
     padding-left: 7%;
     padding-right: 7%;
+    position: relative;
 }
 
 #content-3-grid a {
@@ -375,9 +502,14 @@ a {color: #3367d6; text-decoration: none;}
 }
 
 #content-3-grid h3 {
-    margin-top: 2rem;
-    padding-left: 7%;
-    padding-right: 7%;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 10%;
+    position: absolute;
+    top: 50%;
+    font-size: 1.125rem; 
+    line-height: 1.4;
 }
 
 .see-all-tools-button {
@@ -477,4 +609,59 @@ a {color: #3367d6; text-decoration: none;}
     right: -7rem;
     display: flex;
     justify-content: flex-end;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////  MEDIA QUERIES   ///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 1203px) {
+    aside {
+        display: none;
+    } 
+}
+
+@media only screen and (max-width: 1202px) {
+    span {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1001px) {
+    .max-width-1000px {display: none;}
+}
+
+@media only screen and (max-width: 1000px) {
+    .content_of_header {display: none;}
+
+    .content-1 {
+        padding-top: 5rem;
+        position: relative; 
+        top: -10rem;
+    }
+
+    header {background: transparent;}
+
+    .min-width-1001px {display: none;}
+
+    .card-1, .card-6 {width: 100%}
+
+    .card-2, .card-3, .card-4, .card-5 {width: 48%}
+
+    .card-3, .card-4 {
+        background-size: 28rem 11rem;
+    }
+
+    .card-1-h3, .card-6-h3 {
+        left: -4.2rem;
+        width: 72%;
+    }
+
+    .content-3-grid-columns {flex-wrap: wrap;}
+
+    .content-3-grid-columns li {
+        width: 47%;
+    }
+
+
 }
