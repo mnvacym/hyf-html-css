@@ -21,9 +21,7 @@ body {
 
 *, *:after, *:before {box-sizing: border-box;}
 
-header {
-    margin-bottom: 4.5%;
-}
+header {margin-bottom: 4.5%;}
 
 #background_header {
     position: absolute;
@@ -47,7 +45,6 @@ header {
     position: relative; 
     justify-content: flex-end; 
     display: flex;
-
 }
 
 #location_selector-top, option {
@@ -62,17 +59,13 @@ header {
     top: 2px;
 }
 
-.navbar-item1 {
-    padding: 1rem 1.75rem .75rem .875rem;
-}
+.navbar-item1 {padding: 1rem 1.75rem .75rem .875rem;}
 
-span {
-    margin-right: 1rem;
-}
+span {margin-right: 1rem;}
 
-/* ///////////////////////////////////////////////////
-                DROPDOWN MENU 
-///////////////////////////////////////////////////// */
+/*//////////////////////////////////////////////////////
+/////////////    DROPDOWN MENUS-start   ////////////////
+//////////////////////////////////////////////////////*/
 
 .dropbtn {
     padding: 1rem 1.75rem .75rem .875rem;
@@ -81,10 +74,7 @@ span {
     margin-bottom: 1rem;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
+.dropdown {position: relative; display: inline-block;}
 
 .dropdown-content-1 {
     display: none;
@@ -153,9 +143,9 @@ i {
 
 .hr-dropdown {width: 90%;}
 
-/* ///////////////////////////////////////////////////
-                DROPDOWN MENU 
-///////////////////////////////////////////////////// */
+/*////////////////////////////////////////////////////////////
+///////////    DROPDOWN MENUS-end    ////////////////////////
+/////////////////////////////////////////////////////////// */
 
 .search_button {
     display: inline-block;
@@ -224,6 +214,10 @@ h1 {
     top: .4rem;
 }
 
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////   CONTENT-1   /////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 .content-1 {
     position: relative;
     width: 100%;
@@ -231,8 +225,9 @@ h1 {
     z-index: -2;
     padding-left: 3%;
     padding-right: 2%;
-    
 }
+
+.content-1 li {cursor: pointer;}
 
 .card-1-background, .card-6-background {
     background-image: linear-gradient(180deg,transparent,rgba(0,0,0,.3) 40%,rgba(0,0,0,.4));
@@ -250,20 +245,11 @@ h1 {
     margin-right: 3%;
 }
 
-.description-of-card {
-    color: #757575;
-    font-size: .875rem;
-}
+.description-of-card {color: #757575; font-size: .875rem;}
 
-.card-title {
-    font-size: 1.125rem;
-    line-height: 1.4;
-}
+.card-title {font-size: 1.125rem; line-height: 1.4;}
 
-#content-grid, h3 {
-    display: flex;
-    flex-wrap: wrap;
-}
+#content-grid, h3 {display: flex; flex-wrap: wrap;}
 
 .cards {
     list-style: none;
@@ -277,28 +263,17 @@ h1 {
     box-shadow:0 .125rem .625rem 0 rgba(0,0,0,.11);
 }
 
-.card-1, .card-6 {
-    width: 48%;
-}
+.card-1, .card-6 {width: 48%;}
 
-.card-1-background, .card-6-background {
-    height: 340px;
-    width: 100%;
-}
+.card-1-background, .card-6-background {height: 340px; width: 100%;}
 
-.card-1-img, .card-2-img, .card-4-img, .card-5-img, .card-6-img {
-    top: -1rem;
-}
+.card-1-img, .card-2-img, .card-4-img, .card-5-img, .card-6-img {top: -1rem;}
 
 .card-3-img {top: -65px; }
 
-li {
-    overflow: hidden;
-}
+li {overflow: hidden;}
 
 li img {width: 100%; position: absolute; z-index: -1;}
-
-
 
 .card-title {
     text-align: center;
@@ -341,25 +316,17 @@ h2 {
     font-size: 1.9375rem;
 }
 
-.content-2 {
-    margin-right: 5%;
-    margin-left: 5%;
-}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////   CONTENT-2   /////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-#content-2-grid {
-    display: flex;
-    line-height: 1.6;
-}
+.content-2 {margin-right: 5%; margin-left: 5%;}
 
-.content-2-grid-columns {
-    flex: 33.33333%;
-}
+#content-2-grid {display: flex; line-height: 1.6;}
 
-h3 {
-    position: relative;
-    font-size: 1.25rem;
-    margin-bottom: 15px;
-}
+.content-2-grid-columns {flex: 33.33333%;}
+
+h3 {position: relative; font-size: 1.25rem; margin-bottom: 15px;}
 
 .icon {
     position: absolute;
@@ -369,28 +336,24 @@ h3 {
     float: right;
 }
 
-a {
-    color: #3367d6;
-    text-decoration: none;
-}
+a {color: #3367d6; text-decoration: none;}
 
-.content-3 {
-    margin: 0 0 3% 3%;
-}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////   CONTENT-3   //////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-.content-3-grid-columns {
-    display: flex;
-}
+.content-3 {margin: 0 0 3% 3%;}
 
-.content-3-grid-columns img {
-    position: relative;
-}
+.content-3-grid-columns {display: flex;}
+
+.content-3-grid-columns img {position: relative;}
 
 .content-3-grid-columns li {
     margin-right: 3%;
-    height: 400px;
+    height: 450px;
     box-shadow:0 .125rem .625rem 0 rgba(0,0,0,.11);
     position: relative;
+    cursor: pointer;
 }
 
 .content-3-grid-columns p {
@@ -412,6 +375,7 @@ a {
 }
 
 #content-3-grid h3 {
+    margin-top: 2rem;
     padding-left: 7%;
     padding-right: 7%;
 }
@@ -434,6 +398,10 @@ a {
 
 #content-3-grid a:hover, .subscribe_button_footer:hover, a:hover {color: #4285f4;}
 
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////   FOOTER   ////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 .subscribe_button_footer {
     padding: .875rem 1.6875rem;
     background-color: #fff;
@@ -453,9 +421,6 @@ a {
     padding: 3% 10% 2% 10%;
 }
 
-hr {
-}
-
 .footer-2 {
     position: relative;
     background: #3367d6;
@@ -473,22 +438,13 @@ hr {
 
 #google-logo:hover {fill: hsla(0,0%,100%,.7); cursor: pointer;}
 
-.navbar-footer, .links-of-navbar-footer {
-    display: flex;
-}
+.navbar-footer, .links-of-navbar-footer {display: flex;}
 
-.links-of-navbar-footer {
-    width: 900px;
-}
+.links-of-navbar-footer {width: 900px;}
 
-.list-item-navbar-footer, #google-logo {
-    margin-right: 1.125rem;
-}
+.list-item-navbar-footer, #google-logo {margin-right: 1.125rem;}
 
-.list-item-navbar-footer:hover {
-    color:hsla(0,0%,100%,.7);
-    cursor: pointer;
-}
+.list-item-navbar-footer:hover {color:hsla(0,0%,100%,.7); cursor: pointer;}
 
 #location_selector-bottom {
     background: #3367d6;
@@ -502,9 +458,7 @@ hr {
     margin-top: 3.5%;
 }
 
-.locator-and-media-links {
-    display: flex;
-}
+.locator-and-media-links {display: flex;}
 
 #share-linkedin, #share-twitter, #share-facebook, #share-youtube, #rss-feed {
     width: 3%;
