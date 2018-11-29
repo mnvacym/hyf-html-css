@@ -74,7 +74,7 @@
 
                     <!-----------------------------------SIDEBAR - START---------------------------------------------------------->
                     <div id="mySidenav" class="sidenav">                        
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</div>
                         <a href="#">Consumer Insights</a>
                         <a href="#">Marketing Resources</a>
                         <a href="#">Data & Measurement</a>
@@ -95,7 +95,7 @@
                     
                     <script>
                         function openNav() {
-                            document.getElementById("mySidenav").style.width = "360px";
+                            document.getElementById("mySidenav").style.width = "340px";
                             var newStyles = document.createElement('style')
                             document.head.append(newStyles)
                             newStyles.innerHTML = ".background-color {background-color: rgba(0,0,0,0.7); bottom: 0;" +
@@ -131,7 +131,7 @@
         
         <section class="content-1">
             <h2 class="min-width-1001px">Latest trends and stories</h2>
-            <h2 class="max-width-1000px">Insights you want. <br>Inspiration you need.</h2>
+            <h2 class="max-width-1000px-insights">Insights you want. <br>Inspiration you need.</h2>
             <ul id="content-grid">
                 <li class="card-1 cards">
                     <h3 class="card-title card-1-h3">How brands can lean into the right moments in 2019</h3>
@@ -221,8 +221,10 @@
             </div>
         </section>
         
-        <button class="see-all-tools-button">SEE ALL TOOLS</button>
-
+        <div class="see-all-tools-button-div">
+            <button class="see-all-tools-button">SEE ALL TOOLS</button>
+        </div>
+        
         <footer class="footer-1">
             <h2>Get the latest data, insights, and inspiration from Google.</h2>
             <button class="subscribe_button_footer">SUBSCRIBE</button>

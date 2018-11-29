@@ -12,6 +12,8 @@ summary, time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+html {height: 100%}
+
 body {
     height: 100%;
     width: 100%;
@@ -35,9 +37,12 @@ header {
     position: relative; 
     top: -.7rem;
     margin-right: 1rem;
+    margin-top: 1rem;
 }
 
 /*///////////////////////////////   SIDEBAR - START     ////////////////////////////////////////////////////////*/
+.closebtn {cursor: pointer;}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -83,6 +88,7 @@ header {
     position: relative; 
     top: -.5rem;
     margin: 0;
+    margin-top: .5rem;
     padding: 0;
     z-index: 2;
 }
@@ -108,7 +114,7 @@ header {
     border: none;
     color: #757575;
     font-size: 1rem;
-    margin: 0 0 0 3%;
+    margin: 1rem 0 0 3%;
     padding: .125rem .9375rem .125rem .625rem;
     cursor: pointer;
     position: relative;
@@ -233,7 +239,7 @@ i {
     margin-right: 10rem;
 }
 
-h1 {
+.content_of_header_h1-p-button h1 {
     font-weight: 300;
     font-size: 2.4375rem;
     line-height: 1.3;
@@ -518,6 +524,12 @@ a {color: #3367d6; text-decoration: none;}
     line-height: 1.4;
 }
 
+.see-all-tools-button-div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 .see-all-tools-button {
     padding: .875rem 1.6875rem;
     background-color: #3367d6;
@@ -527,9 +539,7 @@ a {color: #3367d6; text-decoration: none;}
     cursor: pointer;
     font-size: .875rem;
     font-weight: 500;
-    position: relative;
-    left: 45%;
-    margin-bottom: 5%;
+    margin-bottom: 5%;  
 }
 
 .see-all-tools-button:hover, .subscribe_button:hover {background: #4285f4;}
@@ -634,7 +644,7 @@ a {color: #3367d6; text-decoration: none;}
 }
 
 @media only screen and (min-width: 1001px) {
-    .max-width-1000px {display: none;}
+    .max-width-1000px-insights {display: none;}
 }
 
 /*tablets*/
@@ -710,7 +720,7 @@ a {color: #3367d6; text-decoration: none;}
     #google-logo {margin: 1rem 0;}
 }
 
-/*mobiles*/
+/*larger-mobiles*/
 @media only screen and (max-width: 600px) {
     .card-2, .card-3, .card-4, .card-5 {
         width: 100%;
@@ -744,8 +754,6 @@ a {color: #3367d6; text-decoration: none;}
         position: absolute;
         left: 8.5rem;
     }
-
-    #collection {width: 1rem;}
 
     #content-2-grid {display: flex; flex-wrap: wrap;}
 
@@ -784,9 +792,6 @@ a {color: #3367d6; text-decoration: none;}
         top: 1rem;
         left: 11rem;
     }
-
-
-
     
     .footer-1 {padding: 3% 10% 2% 3%;}
     
@@ -798,5 +803,71 @@ a {color: #3367d6; text-decoration: none;}
         position: relative;
         top: 4rem;
         right: 18rem;
+    }
+}
+
+/*mobiles*/
+@media only screen and (max-width: 375px) {
+    .max-width-1000px-insights {font-size: 26px;}
+
+    .card-2, .card-3, .card-4, .card-5 {
+        background-size: 10rem 6rem;
+    }
+
+    .card-title {
+        width: 65%;
+        top: -1rem;
+        left: 9rem;
+        font-size: 14px;
+    }
+
+    .card-1-h3, .card-6-h3 {
+        position: absolute;
+        left: -1rem;
+        top: 12rem;
+        width: 100%;
+        text-align: left;
+        color: #fff;
+        font-size: 1.125rem;
+        line-height: 1.4;
+    }  
+
+    .card-2-p, .card-3-p, .card-4-p, .card-5-p {
+        position: absolute;
+        left: 10.5rem;
+        font-size: 12px;
+    }
+
+    .content-3-grid-columns li {
+        width: 100%;
+        height:160px;
+    }
+
+    .content-3-card-1, .content-3-card-2, .content-3-card-3, .content-3-card-4 {
+        background-size: 8rem 6rem;
+        background-position-x: left;
+        background-position-y: center;
+    }
+
+    #content-3-grid p {
+        width: 72%;
+        position: relative;
+        top: 3.5rem;
+        left: 7rem;
+        line-height: 1.4;
+    }
+    
+    #content-3-grid a {
+        position: absolute;
+        bottom: 1rem;
+        left: 7rem;
+    }
+    
+    #content-3-grid h3 {
+        position: absolute;
+        top: .5rem;
+        left: 7rem;
+        width: 65%;
+        font-size: 16px;
     }
 }
