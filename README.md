@@ -3,16 +3,16 @@
 Ammar Vehbi's Homework Repository
 
 
-Here you can find my application assignmnet hosted via Github
+Here you can find my application assignmnet hosted via Github :octocat:
 
-:octocat: https://ammarvehbi.github.io/hyf-html-css/week0
+- https://ammarvehbi.github.io/hyf-html-css/week0
 
 
 
-Here you can find my homework hosted via Github
+Here you can find my homework hosted via Github :octocat:
 
-:octocat: https://ammarvehbi.github.io/hyf-html-css/week1
+- https://ammarvehbi.github.io/hyf-html-css/week1
 
-:octocat: https://ammarvehbi.github.io/hyf-html-css/week2
+- https://ammarvehbi.github.io/hyf-html-css/week2
 
-:octocat: https://ammarvehbi.github.io/hyf-html-css/week3
+- https://ammarvehbi.github.io/hyf-html-css/week3
