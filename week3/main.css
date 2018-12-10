@@ -1,8 +1,8 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
-pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, 
-small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, 
-form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
-details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section,
 summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -35,7 +35,7 @@ header {
 }
 
 .sidebar-3stick {
-    position: relative; 
+    position: relative;
     top: -.7rem;
     margin-right: 1rem;
     margin-top: 1rem;
@@ -81,7 +81,7 @@ header {
 
 .think_with_google_svg {
     width: 14rem;
-    position: relative; 
+    position: relative;
     top: -.5rem;
     margin: 0;
     margin-top: .5rem;
@@ -99,8 +99,8 @@ header {
 .svg_and_location {display: inherit;}
 
 .navbar {
-    position: relative; 
-    justify-content: flex-end; 
+    position: relative;
+    justify-content: flex-end;
     display: flex;
     width: 100%;
 }
@@ -330,7 +330,7 @@ li {overflow: hidden;}
     padding: 10%;
     position: absolute;
     top: 45%;
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
     line-height: 1.4;
 }
 
@@ -339,7 +339,7 @@ li {overflow: hidden;}
     bottom: 7%;
     left: 10%;
     right: 10%;
-    color: #757575; 
+    color: #757575;
     font-size: .875rem;
 }
 
@@ -359,7 +359,7 @@ li {overflow: hidden;}
     text-align: left;
     color: #fff;
     font-size: 1.125rem;
-    line-height: 1.4;   
+    line-height: 1.4;
 }
 
 .card-1 {
@@ -498,7 +498,7 @@ a {color: #3367d6; text-decoration: none;}
     padding-right: 7%;
     position: absolute;
     top: 55%;
-    font-size: 1.125rem; 
+    font-size: 1.125rem;
     line-height: 1.4;
 }
 
@@ -517,7 +517,7 @@ a {color: #3367d6; text-decoration: none;}
     cursor: pointer;
     font-size: .875rem;
     font-weight: 500;
-    margin-bottom: 5%;  
+    margin-bottom: 5%;
 }
 
 .see-all-tools-button:hover, .subscribe_button:hover {background: #4285f4;}
@@ -605,7 +605,7 @@ a {color: #3367d6; text-decoration: none;}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 @media only screen and (min-width: 1203px) {
-    aside {display: none;} 
+    aside {display: none;}
 }
 
 @media only screen and (max-width: 1202px) {
@@ -688,7 +688,7 @@ a {color: #3367d6; text-decoration: none;}
         color: #fff;
         font-size: 1.125rem;
         line-height: 1.4;
-    }  
+    }
 
     .card-2-p, .card-3-p, .card-4-p, .card-5-p {position: absolute; left: 8.5rem;}
 
@@ -711,15 +711,15 @@ a {color: #3367d6; text-decoration: none;}
         left: 11rem;
         line-height: 1.4;
     }
-    
+
     #content-3-grid a {position: absolute; bottom: 1rem; left: 11rem;}
-    
+
     #content-3-grid h3 {position: absolute; top: 1rem; left: 11rem;}
-    
+
     .footer-1 {padding: 3% 10% 2% 3%;}
-    
+
     .footer-1 h2 {font-size: 23px;}
-    
+
     .footer-2 {height: 17rem;}
 
     .media-links {position: relative; top: 4rem; right: 17.5rem;}
@@ -740,7 +740,7 @@ a {color: #3367d6; text-decoration: none;}
         font-size: 1.125rem;
         line-height: 1.4;
     }
-    
+
     .card-2-p, .card-3-p, .card-4-p, .card-5-p {
         position: absolute;
         bottom: 1rem;
@@ -753,7 +753,7 @@ a {color: #3367d6; text-decoration: none;}
         background-position-x: left;
         background-position-y: center;
     }
-    
+
     #content-3-grid h3 {
         position: absolute;
         top: .5rem;
@@ -790,7 +790,7 @@ a {color: #3367d6; text-decoration: none;}
         color: #fff;
         font-size: 1.125rem;
         line-height: 1.4;
-    }  
+    }
 
     .card-2-p, .card-3-p, .card-4-p, .card-5-p {position: absolute; left: 10.5rem; font-size: 12px;}
 
@@ -809,9 +809,9 @@ a {color: #3367d6; text-decoration: none;}
         left: 7rem;
         line-height: 1.4;
     }
-    
+
     #content-3-grid a {position: absolute; bottom: 1rem; left: 7rem;}
-    
+
     #content-3-grid h3 {
         position: absolute;
         top: .5rem;

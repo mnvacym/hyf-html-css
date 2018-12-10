@@ -17,11 +17,6 @@ h2 {font-size: 200%;}
 h3 {font-size: 150%;}
 p {font-size: 120%;}
 
-#main {
-  width: 1505px;
-  margin: auto;
-}
-
 #my_photo {
   border: none;
   border-radius: 50%;
@@ -32,12 +27,6 @@ p {font-size: 120%;}
   margin-bottom: 2%;
   width: 25%;
   opacity: 0.5;
-  transition: width 1s;
-}
-
-#my_photo:hover {
-  width: 22%;
-  transition: width 1s;
 }
 
 .about_me {
@@ -232,44 +221,8 @@ img {
   to {letter-spacing: 6px;}
 }  
 
-#line {
-  /*width: 20%;
-  height: 100px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  position: relative;
-  top: -35px;*/
-  color: #aaaab3;
-  border-bottom: 1px solid ;
-  border-left: 0px solid transparent;
-  border-right: 0px solid transparent;
-  height: 0px;
+hr {
   width: 20%;
-  position: absolute;
-  top: 625px;
-  left: 40%;
-  display: block;
-  z-index: -1;
-  opacity: 0.9;
-  margin: 0; 
-}
-
-#profession {
-  text-align: center;
-  font-size: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  position: relative;
-  top: 0px;
-}  
-
-#header {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; 
 }
 
 div img {
@@ -277,56 +230,6 @@ div img {
   padding: 3px 5px 3px 5px;
   margin: 5px 5px 5px 5px;
 }
-
-/*#navbar {
-  position: fixed;
-  float: left;
-  animation: navbar 3s ease;
-}
-
-@keyframes navbar {
-  from {left: -80px;}
-  to {left: 8px;}
-}*/
-
-/*.icons {
-  width: 33px;
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
-  transition: width 1s;
-}
-
-.icons:hover {
-  /**border: solid black 2px;
-  border-radius: 10px;**/
-  /**animation: shake 0.7s; 
-  /**animation-iteration-count: infinite; **/
-  /**animation: zoom 0.4s ease;
-  animation-fill-mode: forwards;
-  animation-direction: alternate;**/
-  /*width: 60px; 
-  transition: width 0.4s;
-}*/
-
-/*@keyframes zoom {
-  from{width: 30px;}
-  to{width: 60px;}
-}
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}*/
 
 #section-1 { 
   background-color: #ea2e49;
@@ -382,7 +285,7 @@ div img {
   color: white;
 }
 
-.text {
+main {
   text-align: center;
   text-align: justify;
   margin-left: auto;
@@ -393,114 +296,6 @@ div img {
   top: 250px;
   line-height: 1.8;
 }
-
-/*#about {
-  border-bottom: 50px solid rgb(229, 107, 113);
-  border-left: 0px solid transparent;
-  border-right: 30px solid transparent;
-  height: 0px;
-  width: 570px;
-  position: relative;
-  top: 205px;
-  z-index: -1;
-  opacity: 0.9;
-  margin: 0;
-}
-
-#work {
-  border-bottom: 50px solid rgb(119, 137, 177);
-  border-left: 30px solid transparent;
-  border-right: 0px solid transparent;
-  height: 0px;
-  width: 1140px;
-  position: relative;
-  top: 695px;
-  left: 335px;
-  z-index: -1;
-  opacity: 0.9;
-  margin: 0;
-}
-
-#edu {
-  border-bottom: 50px solid rgb(143, 120, 179);
-  border-left: 0px solid transparent;
-  border-right: 30px solid transparent;
-  height: 0px;
-  width: 580px;
-  position: relative;
-  top: 2278px;
-  z-index: -1;
-  opacity: 0.9;
-  margin: 0;
-}
-
-#sk {
-  border-bottom: 50px solid rgb(245, 156, 166);
-  border-left: 30px solid transparent;
-  border-right: 0px solid transparent;
-  height: 0px;
-  width: 1155px;
-  position: relative;
-  top: 3427px;
-  left: 320px;
-  z-index: -1;
-  opacity: 0.9;
-  margin: 0;
-}
-
-#hob {
-  border-bottom: 50px solid rgb(102, 160, 160);
-  border-left: 0px solid transparent;
-  border-right: 30px solid transparent;
-  height: 0px;
-  width: 550px;
-  position: relative;
-  top: 4405px;
-  z-index: -1;
-  opacity: 0.9;
-  margin: 0;
-}
-
-#learning {
-  border-bottom: 50px solid rgb(234, 192, 109);
-  border-left: 30px solid transparent;
-  border-right: 0px solid transparent;
-  height: 0px;
-  width: 1155px;
-  position: relative;
-  top: 4767px;
-  left: 320px;
-  z-index: -1;
-  opacity: 0.9;
-  margin: 0;
-}
-
-#resources {
-  border-bottom: 50px solid rgb(132, 208, 132);
-  border-left: 0px solid transparent;
-  border-right: 30px solid transparent;
-  height: 0px;
-  width: 570px;
-  position: relative;
-  top: 4980px;
-  z-index: -1;
-  opacity: 0.9;
-  margin: 0;
-}
-
-#platforms {
-  border-bottom: 50px solid rgb(70, 35, 5);
-  border-left: 30px solid transparent;
-  border-right: 0px solid transparent;
-  height: 0px;
-  width: 1155px;
-  position: relative;
-  top: 5305px;
-  left: 320px;
-  z-index: -1;
-  opacity: 0.6;
-  margin: 0;
-} */
 
 #linkedin, #github {
   width: 30px;
